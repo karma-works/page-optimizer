@@ -1,0 +1,469 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "margins": {
+        "top": 24.0,
+        "right": 20.0,
+        "bottom": 24.0,
+        "left": 20.0
+      },
+      "fill_ratio": 0.698,
+      "blocks": [
+        {
+          "id": "b0001_5e2c6f889408",
+          "kind": "heading",
+          "bbox": [
+            56.69,
+            756.86,
+            538.58,
+            773.86
+          ],
+          "lines": 1,
+          "text": "Synthetic Layout Sample 41"
+        },
+        {
+          "id": "b0003_d82b881a4af9",
+          "kind": "heading",
+          "bbox": [
+            56.69,
+            729.86,
+            538.58,
+            746.86
+          ],
+          "lines": 1,
+          "text": "Section 1"
+        },
+        {
+          "id": "b0004_c2b81bbb05fd",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            641.86,
+            538.58,
+            719.86
+          ],
+          "lines": 6,
+          "text": "Labore eiusmod quis aliqua consequat magna quis lorem et ipsum laboris do do eni"
+        },
+        {
+          "id": "b0005_512a63f89309",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            569.86,
+            538.58,
+            634.86
+          ],
+          "lines": 5,
+          "text": "Quis enim quis aliqua laboris consectetur ut consequat eiusmod ut ipsum labore t"
+        },
+        {
+          "id": "b0006_563b4f33d5ed",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            484.86,
+            538.58,
+            562.86
+          ],
+          "lines": 6,
+          "text": "Veniam tempor ullamco ipsum labore eiusmod ex nostrud do ipsum ea quis ipsum lab"
+        },
+        {
+          "id": "b0007_f16ef391623c",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            399.86,
+            538.58,
+            477.86
+          ],
+          "lines": 6,
+          "text": "Ipsum magna ea sit incididunt enim aliqua aliqua dolore aliqua magna aliqua cons"
+        },
+        {
+          "id": "b0008_37dc0b5f7c22",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            340.86,
+            538.58,
+            392.86
+          ],
+          "lines": 4,
+          "text": "Et ea labore eiusmod ipsum consectetur consectetur magna enim et tempor sed dolo"
+        },
+        {
+          "id": "b0009_a93d7da4883a",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            268.86,
+            538.58,
+            333.86
+          ],
+          "lines": 5,
+          "text": "Adipiscing ipsum laboris do aliqua ullamco ut nisi do ut enim labore consectetur"
+        },
+        {
+          "id": "b0010_56d412ed5650",
+          "kind": "list",
+          "bbox": [
+            56.69,
+            235.86,
+            538.58,
+            261.86
+          ],
+          "lines": 2,
+          "text": "Ut sit commodo ut exercitation magna eiusmod commodo laboris sed laboris ullamco"
+        },
+        {
+          "id": "b0011_9d7a89143512",
+          "kind": "heading",
+          "bbox": [
+            56.69,
+            211.86,
+            538.58,
+            228.86
+          ],
+          "lines": 1,
+          "text": "Section 2"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "margins": {
+        "top": 24.0,
+        "right": 20.0,
+        "bottom": 24.0,
+        "left": 20.0
+      },
+      "fill_ratio": 0.853,
+      "blocks": [
+        {
+          "id": "b0013_80691bd72760",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            682.86,
+            538.58,
+            773.86
+          ],
+          "lines": 7,
+          "text": "Labore amet ut ipsum lorem ullamco commodo nostrud lorem consectetur nisi sed lo"
+        },
+        {
+          "id": "b0014_8e67e7ff1292",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            571.86,
+            538.58,
+            675.86
+          ],
+          "lines": 8,
+          "text": "Labore dolor nisi tempor ad laboris ut exercitation sit adipiscing ullamco ea la"
+        },
+        {
+          "id": "b0015_d92aa990eb52",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            460.86,
+            538.58,
+            564.86
+          ],
+          "lines": 8,
+          "text": "Labore magna consequat tempor ut nostrud quis incididunt ullamco consectetur ut "
+        },
+        {
+          "id": "b0016_656ab896cbc5",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            401.86,
+            538.58,
+            453.86
+          ],
+          "lines": 4,
+          "text": "Lorem exercitation ut magna consectetur aliqua elit tempor et consequat sit cons"
+        },
+        {
+          "id": "b0017_7942cdd6c388",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            277.86,
+            538.58,
+            394.86
+          ],
+          "lines": 9,
+          "text": "Quis exercitation veniam ut elit ex elit tempor ad ut ad nisi aliqua ipsum tempo"
+        },
+        {
+          "id": "b0018_ae7b2af47251",
+          "kind": "list",
+          "bbox": [
+            56.69,
+            244.86,
+            538.58,
+            270.86
+          ],
+          "lines": 2,
+          "text": "Enim ex ea incididunt laboris ut adipiscing dolor nisi elit ad nostrud.\nUt ut ad"
+        },
+        {
+          "id": "b0019_e3f27ca5bc5e",
+          "kind": "heading",
+          "bbox": [
+            56.69,
+            220.86,
+            538.58,
+            237.86
+          ],
+          "lines": 1,
+          "text": "Section 3"
+        },
+        {
+          "id": "b0021_877f4bfcae2d",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            119.86,
+            538.58,
+            210.86
+          ],
+          "lines": 7,
+          "text": "Ut magna consectetur sit consectetur labore et amet sit ullamco commodo adipisci"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "margins": {
+        "top": 24.0,
+        "right": 20.0,
+        "bottom": 24.0,
+        "left": 20.0
+      },
+      "fill_ratio": 0.877,
+      "blocks": [
+        {
+          "id": "b0022_c59bdf191f17",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            721.86,
+            538.58,
+            773.86
+          ],
+          "lines": 4,
+          "text": "Elit ea ea enim lorem ea elit ut exercitation nostrud laboris labore sed ea ea l"
+        },
+        {
+          "id": "b0023_bf69ba7b30c6",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            623.86,
+            538.58,
+            714.86
+          ],
+          "lines": 7,
+          "text": "Ea aliquip tempor minim nisi ut commodo consectetur ut minim adipiscing exercita"
+        },
+        {
+          "id": "b0024_20577eb2d16f",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            538.86,
+            538.58,
+            616.86
+          ],
+          "lines": 6,
+          "text": "Dolor do elit minim labore aliquip adipiscing veniam et ipsum tempor sed enim ut"
+        },
+        {
+          "id": "b0025_97a1a0e934a1",
+          "kind": "list",
+          "bbox": [
+            56.69,
+            492.86,
+            538.58,
+            531.86
+          ],
+          "lines": 3,
+          "text": "Exercitation commodo ut aliquip consectetur et et ex nostrud consequat enim quis"
+        },
+        {
+          "id": "b0026_007bc4cd42fa",
+          "kind": "heading",
+          "bbox": [
+            56.69,
+            468.86,
+            538.58,
+            485.86
+          ],
+          "lines": 1,
+          "text": "Section 4"
+        },
+        {
+          "id": "b0027_f48bc3f5c811",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            406.86,
+            538.58,
+            458.86
+          ],
+          "lines": 4,
+          "text": "Do nisi et exercitation do sed dolor labore eiusmod ut ad aliqua elit veniam dol"
+        },
+        {
+          "id": "b0028_cecc4a0e0b97",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            321.86,
+            538.58,
+            399.86
+          ],
+          "lines": 6,
+          "text": "Ex ex quis do consequat consectetur magna ut laboris consectetur nisi exercitati"
+        },
+        {
+          "id": "b0029_d012bd1f4c44",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            249.86,
+            538.58,
+            314.86
+          ],
+          "lines": 5,
+          "text": "Commodo aliqua nostrud lorem sed quis ea ut elit dolor exercitation sit laboris "
+        },
+        {
+          "id": "b0030_e46460736316",
+          "kind": "list",
+          "bbox": [
+            56.69,
+            203.86,
+            538.58,
+            242.86
+          ],
+          "lines": 3,
+          "text": "Ea et dolore dolor magna tempor enim ex magna commodo ea do.\nEt veniam sed ut et"
+        },
+        {
+          "id": "b0031_c8d6f6689001",
+          "kind": "heading",
+          "bbox": [
+            56.69,
+            179.86,
+            538.58,
+            196.86
+          ],
+          "lines": 1,
+          "text": "Section 5"
+        },
+        {
+          "id": "b0032_56dcffb55abc",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            104.86,
+            538.58,
+            169.86
+          ],
+          "lines": 5,
+          "text": "Exercitation lorem et tempor ex nisi et magna commodo ut elit quis quis ipsum ni"
+        },
+        {
+          "id": "b0033_4e9aa66404c9",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            71.86,
+            538.58,
+            97.86
+          ],
+          "lines": 2,
+          "text": "Eiusmod ea incididunt elit consectetur enim commodo veniam dolor commodo nisi lo"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "margins": {
+        "top": 24.0,
+        "right": 20.0,
+        "bottom": 24.0,
+        "left": 20.0
+      },
+      "fill_ratio": 0.276,
+      "blocks": [
+        {
+          "id": "b0033_4e9aa66404c9",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            734.86,
+            538.58,
+            773.86
+          ],
+          "lines": 3,
+          "text": "Eiusmod ea incididunt elit consectetur enim commodo veniam dolor commodo nisi lo"
+        },
+        {
+          "id": "b0034_c89a39242d45",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            662.86,
+            538.58,
+            727.86
+          ],
+          "lines": 5,
+          "text": "Minim ea nostrud incididunt labore incididunt consequat laboris dolore adipiscin"
+        },
+        {
+          "id": "b0035_adf0ca468707",
+          "kind": "paragraph",
+          "bbox": [
+            56.69,
+            603.86,
+            538.58,
+            655.86
+          ],
+          "lines": 4,
+          "text": "Minim lorem adipiscing ipsum amet sit nisi tempor aliquip labore tempor dolor si"
+        },
+        {
+          "id": "b0036_6b0dc6f7cb6f",
+          "kind": "list",
+          "bbox": [
+            56.69,
+            557.86,
+            538.58,
+            596.86
+          ],
+          "lines": 3,
+          "text": "Ut sed laboris commodo dolor tempor commodo sit eiusmod dolore et exercitation.\n"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "page_count": 4,
+    "overflow_blocks": 0,
+    "empty_page_count": 0,
+    "sparse_page_count": 1,
+    "average_fill_ratio": 0.676,
+    "widow_violations": 0,
+    "clipped_content_detected": false
+  }
+}

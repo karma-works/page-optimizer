@@ -1,0 +1,15 @@
+page:
+  size: A4
+margins:
+  top: 24mm
+  right: 20mm
+  bottom: 24mm
+  left: 20mm
+fonts:
+  body: Helvetica
+  heading: Helvetica-Bold
+  mono: Courier
+sizes:
+  body: 10
+  heading: 16
+  leading: 13
