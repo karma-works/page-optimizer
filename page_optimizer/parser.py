@@ -74,7 +74,7 @@ def parse_markdown(markdown: str, counters: dict[str, int] | None = None) -> Doc
             continue
         counter = COUNTER_RE.match(stripped)
         if counter:
-            counters[counter.group(1)] = 0
+            counters.setdefault(counter.group(1), 0)
             add("optional", counter.group(2).replace("<NL>", "\n"), line_no, attrs={"counter": counter.group(1)})
             i += 1
             continue

@@ -24,3 +24,10 @@ def test_npr_starts_recto_page_after_content(tmp_path):
     result = PdfRenderer(load_theme()).render(doc, tmp_path / "recto.pdf", tmp_path / "recto.json")
     heading_b = [b for p in result.pages for b in p.blocks if b.text == "B"][0]
     assert heading_b.page % 2 == 1
+
+
+def test_renderer_detects_dangling_heading(tmp_path):
+    doc = parse_markdown("# A\n\n## Section 2\n\n<NP>\n\nBody text after an explicit page break.")
+    result = PdfRenderer(load_theme()).render(doc, tmp_path / "dangling.pdf", tmp_path / "dangling.json")
+    assert result.metrics["dangling_heading_count"] == 1
+    assert result.metrics["dangling_headings"][0]["heading_text"] == "Section 2"

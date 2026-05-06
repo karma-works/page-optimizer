@@ -462,6 +462,16 @@
     "overflow_blocks": 0,
     "empty_page_count": 0,
     "sparse_page_count": 1,
+    "dangling_heading_count": 1,
+    "dangling_headings": [
+      {
+        "heading_id": "b0011_9d7a89143512",
+        "heading_text": "Section 2",
+        "heading_page": 2,
+        "next_content_id": "b0013_4f6b464fa03c",
+        "next_content_page": 3
+      }
+    ],
     "average_fill_ratio": 0.622,
     "widow_violations": 0,
     "clipped_content_detected": false

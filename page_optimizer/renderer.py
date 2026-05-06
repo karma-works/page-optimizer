@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import math
 import textwrap
 from pathlib import Path
 
@@ -158,15 +157,41 @@ def compute_metrics(pages: list[PageLayout], content_height: float) -> dict[str,
                 overflow += 1
     fills = [page.fill_ratio for page in pages if page.blocks]
     sparse = sum(1 for fill in fills if fill < 0.32)
+    dangling_headings = find_dangling_headings(pages)
     return {
         "page_count": len(pages),
         "overflow_blocks": overflow,
         "empty_page_count": empty,
         "sparse_page_count": sparse,
+        "dangling_heading_count": len(dangling_headings),
+        "dangling_headings": dangling_headings,
         "average_fill_ratio": round(sum(fills) / len(fills), 3) if fills else 0,
         "widow_violations": 0,
         "clipped_content_detected": overflow > 0,
     }
+
+
+def find_dangling_headings(pages: list[PageLayout]) -> list[dict[str, object]]:
+    issues: list[dict[str, object]] = []
+    content_kinds = {"paragraph", "list", "table", "code", "optional"}
+    flat_blocks = [block for page in pages for block in page.blocks]
+    for index, block in enumerate(flat_blocks):
+        if block.kind != "heading":
+            continue
+        next_content = next((candidate for candidate in flat_blocks[index + 1 :] if candidate.kind in content_kinds or candidate.kind == "heading"), None)
+        if next_content is None or next_content.kind == "heading":
+            continue
+        if next_content.page != block.page:
+            issues.append(
+                {
+                    "heading_id": block.id,
+                    "heading_text": block.text,
+                    "heading_page": block.page,
+                    "next_content_id": next_content.id,
+                    "next_content_page": next_content.page,
+                }
+            )
+    return issues
 
 
 def _pages_json(pages: list[PageLayout]) -> list[dict[str, object]]:

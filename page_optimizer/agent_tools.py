@@ -34,9 +34,15 @@ def evaluate_layout(metadata_path: str) -> dict[str, Any]:
 def propose_patch(metadata_path: str) -> dict[str, Any]:
     judged = evaluate_layout(metadata_path)
     actions: list[dict[str, Any]] = []
-    if judged["metrics"]["sparse_page_count"] > 0:
+    if judged["metrics"].get("dangling_heading_count", 0) > 0:
+        actions.append({"op": "remove_tag", "anchor": "first_dangling_heading_after", "tag": "<NP>"})
+        reason = "Remove an explicit page break that strands a heading from its following content."
+    elif judged["metrics"]["sparse_page_count"] > 0:
         actions.append({"op": "set_counter", "name": "12", "value": 1})
-    return {"version": 1, "actions": actions, "reason": "Enable optional content when deterministic metrics report sparse pages."}
+        reason = "Enable optional content when deterministic metrics report sparse pages."
+    else:
+        reason = "No deterministic repair needed."
+    return {"version": 1, "actions": actions, "reason": reason}
 
 
 TOOLS: dict[str, Callable[..., dict[str, Any]]] = {

@@ -31,13 +31,13 @@ class ReActAgent:
     api_key: str | None = field(default_factory=lambda: os.getenv("OPENROUTER_API_KEY"))
     base_url: str = "https://openrouter.ai/api/v1/chat/completions"
 
-    def optimize(self, markdown_path: str, theme_path: str = "themes/default.yml", iterations: int = 3) -> dict[str, Any]:
+    def optimize(self, markdown_path: str, theme_path: str = "themes/default.yml", iterations: int = 3, output_dir: str = "renders") -> dict[str, Any]:
         patch_path = None
         trajectory: list[Step] = []
         last_state = None
         for _ in range(iterations):
             thought = "Render, score, and use deterministic tools before proposing a non-destructive patch."
-            rendered = TOOLS["render_document"](markdown_path=markdown_path, theme_path=theme_path, patch_path=patch_path, output_dir="renders")
+            rendered = TOOLS["render_document"](markdown_path=markdown_path, theme_path=theme_path, patch_path=patch_path, output_dir=output_dir)
             trajectory.append(Step(thought, "render_document", rendered))
             if not rendered["ok"]:
                 break

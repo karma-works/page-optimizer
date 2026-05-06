@@ -31,6 +31,7 @@ def main(argv: list[str] | None = None) -> int:
     agent.add_argument("markdown")
     agent.add_argument("--theme", default="themes/default.yml")
     agent.add_argument("--iterations", type=int, default=3)
+    agent.add_argument("--output-dir", default="renders")
     args = parser.parse_args(argv)
 
     if args.command == "sample":
@@ -42,7 +43,7 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "rate":
         print(json.dumps(rate_document(args.sample, args.pdf, args.screenshot, args.rating, args.notes), indent=2))
     elif args.command == "agent":
-        print(json.dumps(ReActAgent().optimize(args.markdown, args.theme, args.iterations), indent=2))
+        print(json.dumps(ReActAgent().optimize(args.markdown, args.theme, args.iterations, args.output_dir), indent=2))
     return 0
 
 
