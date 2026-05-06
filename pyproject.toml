@@ -24,6 +24,10 @@ test = ["pytest>=8"]
 [project.scripts]
 page-optimizer = "page_optimizer.cli:main"
 
+[tool.setuptools.packages.find]
+include = ["page_optimizer*"]
+exclude = ["docs*", "examples*", "patches*", "prompts*", "renders*", "tests*", "themes*"]
+
 [tool.pytest.ini_options]
 pythonpath = [".", ".deps"]
 testpaths = ["tests"]
